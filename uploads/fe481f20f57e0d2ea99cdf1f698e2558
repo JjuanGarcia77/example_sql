@@ -1,0 +1,4 @@
+transaction_id,date,customer_name,customer_email,address,category_name,sku,product_name,unit_price,quantity,supplier_name,supplier_email
+TX001,2026-03-01,Juan Perez,juan@email.com,Calle 123,Electronics,SKU001,Laptop Gamer,4500,1,TechSupplier,tech@email.com
+TX001,2026-03-01,Juan Perez,juan@email.com,Calle 123,Electronics,SKU002,Mouse RGB,150,2,TechSupplier,tech@email.com
+TX002,2026-03-02,Maria Lopez,maria@email.com,Calle 456,Accessories,SKU003,Keyboard,200,1,InputCorp,input@email.com

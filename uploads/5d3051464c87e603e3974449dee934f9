@@ -1,0 +1,4 @@
+transaction_id,date,customer_name,customer_email,address,category_name,sku,product_name,unit_price,quantity,supplier_name,supplier_email
+TX100,2026-03-05,Carlos Ramirez,carlos.ramirez@email.com,Calle 789,Computers,SKU101,Notebook Pro,5200,1,Electronix,contact@electronix.com
+TX101,2026-03-06,Ana Torres,ana.torres@email.com,Avenida 12,Peripherals,SKU102,Wireless Mouse,180,3,TechWorld,sales@techworld.com
+TX102,2026-03-07,Luis Fernandez,luis.fernandez@email.com,Carrera 45,Accessories,SKU103,Mechanical Keyboard,350,2,InputHub,info@inputhub.com

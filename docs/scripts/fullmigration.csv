@@ -1,0 +1,2 @@
+transaction_id,date,customer_name,customer_email,phone,address,category_name,sku,product_name,unit_price,quantity,supplier_name,supplier_email
+TXN-10103,2026-03-01,Juan Perez,juan@email.com,1213123,Calle 123,Electronics,skun001,nice,3500,2,TecnoNova,TecnoNova@gmail.com

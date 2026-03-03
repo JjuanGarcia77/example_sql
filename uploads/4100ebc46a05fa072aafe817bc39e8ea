@@ -1,0 +1,104 @@
+sku,name,unit_price,category_id,supplier_id
+LPT-HP-001,Laptop HP Pavilion 15,3500000,1,1
+MSE-LOG-001,Mouse Logitech G203,120000,2,2
+USB-KIN-64,USB Kingston 64GB,45000,2,2
+CHR-ERG-005,Silla Ergonomica Office,450000,3,3
+MON-SAM-24,Monitor Samsung 24,600000,1,1
+KBD-MEC-002,Teclado Mecanico Redragon,250000,2,4
+DSK-STD-100,Escritorio Estandar Blanco,320000,3,3
+LMP-LED-001,Lampara LED Escritorio,80000,3,5
+LPT-HP-001,Laptop HP Pavilion 15,3500000,1,1
+HDP-SNY-005,Audifonos Sony WH-1000,1200000,2,6
+MSE-LOG-001,Mouse Logitech G203,120000,2,2
+TAB-APP-009,iPad Air 64GB,2800000,1,1
+CS-TAB-009,Funda iPad Air,90000,2,2
+MON-LG-27,Monitor LG 27 UltraGear,1100000,1,1
+CBL-HDMI-003,Cable HDMI 2.0 3m,35000,2,7
+SF-LIV-002,Sofa Cama Gris,1500000,3,3
+LMP-LED-001,Lampara LED Escritorio,80000,3,5
+PRT-EPS-004,Impresora Epson EcoTank,950000,1,8
+PPR-RSM-500,Resma Papel Carta 500,25000,4,9
+USB-KIN-64,USB Kingston 64GB,45000,2,2
+SPK-JBL-005,Parlante JBL Flip 6,550000,1,6
+CFT-OST-001,Cafetera Oster 12 Tazas,180000,5,10
+BTR-IMU-002,Batidora Inmersion,120000,5,10
+LPT-HP-001,Laptop HP Pavilion 15,3500000,1,1
+MSE-LOG-001,Mouse Logitech G203,120000,2,2
+HDP-SNY-005,Audifonos Sony WH-1000,1200000,2,6
+TAB-APP-009,iPad Air 64GB,2800000,1,1
+CHR-ERG-005,Silla Ergonomica Office,450000,3,3
+PPR-RSM-500,Resma Papel Carta 500,25000,4,9
+MIC-SHR-058,Microfono Shure SM58,450000,1,6
+CFT-OST-001,Cafetera Oster 12 Tazas,180000,5,10
+KBD-MEC-002,Teclado Mecanico Redragon,250000,2,4
+MSE-LOG-001,Mouse Logitech G203,120000,2,2
+SPK-JBL-005,Parlante JBL Flip 6,550000,1,6
+LPT-HP-001,Laptop HP Pavilion 15,3500000,1,1
+LMP-LED-001,Lampara LED Escritorio,80000,3,5
+MKR-SHR-012,Marcadores Sharpie x12,35000,4,9
+DSK-STD-100,Escritorio Estandar Blanco,320000,3,3
+CHR-ERG-005,Silla Ergonomica Office,450000,3,3
+MON-SAM-24,Monitor Samsung 24,600000,1,1
+BTR-IMU-002,Batidora Inmersion,120000,5,10
+USB-KIN-64,USB Kingston 64GB,45000,2,2
+TAB-APP-009,iPad Air 64GB,2800000,1,1
+PPR-RSM-500,Resma Papel Carta 500,25000,4,9
+HDP-SNY-005,Audifonos Sony WH-1000,1200000,2,6
+CBL-HDMI-003,Cable HDMI 2.0 3m,35000,2,7
+PRT-EPS-004,Impresora Epson EcoTank,950000,1,8
+SF-LIV-002,Sofa Cama Gris,1500000,3,3
+LMP-LED-001,Lampara LED Escritorio,80000,3,5
+LPT-HP-001,Laptop HP Pavilion 15,3500000,1,1
+MSE-LOG-001,Mouse Logitech G203,120000,2,2
+CFT-OST-001,Cafetera Oster 12 Tazas,180000,5,10
+DSK-STD-100,Escritorio Estandar Blanco,320000,3,3
+MON-LG-27,Monitor LG 27 UltraGear,1100000,1,1
+KBD-MEC-002,Teclado Mecanico Redragon,250000,2,4
+MSE-LOG-001,Mouse Logitech G203,120000,2,2
+SPK-JBL-005,Parlante JBL Flip 6,550000,1,6
+BTR-IMU-002,Batidora Inmersion,120000,5,10
+MKR-SHR-012,Marcadores Sharpie x12,35000,4,9
+TAB-APP-009,iPad Air 64GB,2800000,1,1
+CS-TAB-009,Funda iPad Air,90000,2,2
+MON-SAM-24,Monitor Samsung 24,600000,1,1
+USB-KIN-64,USB Kingston 64GB,45000,2,2
+LMP-LED-001,Lampara LED Escritorio,80000,3,5
+CBL-HDMI-003,Cable HDMI 2.0 3m,35000,2,7
+LPT-HP-001,Laptop HP Pavilion 15,3500000,1,1
+SF-LIV-002,Sofa Cama Gris,1500000,3,3
+PPR-RSM-500,Resma Papel Carta 500,25000,4,9
+MIC-SHR-058,Microfono Shure SM58,450000,1,6
+PRT-EPS-004,Impresora Epson EcoTank,950000,1,8
+CFT-OST-001,Cafetera Oster 12 Tazas,180000,5,10
+HDP-SNY-005,Audifonos Sony WH-1000,1200000,2,6
+CHR-ERG-005,Silla Ergonomica Office,450000,3,3
+TAB-APP-009,iPad Air 64GB,2800000,1,1
+MSE-LOG-001,Mouse Logitech G203,120000,2,2
+KBD-MEC-002,Teclado Mecanico Redragon,250000,2,4
+BTR-IMU-002,Batidora Inmersion,120000,5,10
+SPK-JBL-005,Parlante JBL Flip 6,550000,1,6
+LMP-LED-001,Lampara LED Escritorio,80000,3,5
+MON-LG-27,Monitor LG 27 UltraGear,1100000,1,1
+USB-KIN-64,USB Kingston 64GB,45000,2,2
+MKR-SHR-012,Marcadores Sharpie x12,35000,4,9
+LPT-HP-001,Laptop HP Pavilion 15,3500000,1,1
+CS-TAB-009,Funda iPad Air,90000,2,2
+DSK-STD-100,Escritorio Estandar Blanco,320000,3,3
+MON-SAM-24,Monitor Samsung 24,600000,1,1
+MIC-SHR-058,Microfono Shure SM58,450000,1,6
+CBL-HDMI-003,Cable HDMI 2.0 3m,35000,2,7
+CFT-OST-001,Cafetera Oster 12 Tazas,180000,5,10
+PRT-EPS-004,Impresora Epson EcoTank,950000,1,8
+SF-LIV-002,Sofa Cama Gris,1500000,3,3
+TAB-APP-009,iPad Air 64GB,2800000,1,1
+HDP-SNY-005,Audifonos Sony WH-1000,1200000,2,6
+LPT-HP-001,Laptop HP Pavilion 15,3500000,1,1
+MSE-LOG-001,Mouse Logitech G203,120000,2,2
+PPR-RSM-500,Resma Papel Carta 500,25000,4,9
+LMP-LED-001,Lampara LED Escritorio,80000,3,5
+SPK-JBL-005,Parlante JBL Flip 6,550000,1,6
+BTR-IMU-002,Batidora Inmersion,120000,5,10
+KBD-MEC-002,Teclado Mecanico Redragon,250000,2,4
+MON-SAM-24,Monitor Samsung 24,600000,1,1
+TAB-APP-009,iPad Air 64GB,2800000,1,1
+CHR-ERG-005,Silla Ergonomica Office,450000,3,3

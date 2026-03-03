@@ -12,9 +12,7 @@ app.use(express.json());
 
 const upload = multer({ dest: 'uploads/' });
 
-/* ===============================
-   MYSQL CONNECTION
-=================================*/
+/* MYSQL CONNECTION*/
 const pool = mysql.createPool({
     host: process.env.MYSQL_HOST,
     user: process.env.MYSQL_USER,
@@ -23,9 +21,7 @@ const pool = mysql.createPool({
     port: process.env.MYSQL_PORT
 });
 
-/* ===============================
-   MONGODB CONNECTION (AUDIT)
-=================================*/
+/*MONGODB CONNECTION*/
 mongoose.connect(process.env.MONGO_URI)
     .then(() => console.log("MongoDB connected"))
     .catch(err => console.error("Mongo error:", err));
@@ -37,16 +33,12 @@ const auditSchema = new mongoose.Schema({
 
 const Audit = mongoose.model('audit_logs', auditSchema);
 
-// Log con ID opcional
 async function logActionWithId(action, entityId = null) {
     const logEntry = entityId ? `${action}_${entityId}` : action;
     await Audit.create({ action: logEntry });
 }
- /* manipula*/
-/* ===============================
-   CRUD CUSTOMERS PROTEGIDO
-=================================*/
 
+/* CRUD CUSTOMERS PROTEGIDO*/
 app.post('/api/customers', async (req, res) => {
     try {
         const { name, email, address, phone } = req.body || {};
@@ -57,7 +49,7 @@ app.post('/api/customers', async (req, res) => {
 
         const [result] = await pool.query(
             `INSERT INTO customers (name,email,address,phone)
-             VALUES (?,?,?,?)`,
+            VALUES (?,?,?,?)`,
             [name, email, address, phone]
         );
 
@@ -92,8 +84,8 @@ app.put('/api/customers/:id', async (req, res) => {
 
         await pool.query(
             `UPDATE customers
-             SET name=?, email=?, address=?, phone=?
-             WHERE customer_id=?`,
+            SET name=?, email=?, address=?, phone=?
+            WHERE customer_id=?`,
             [name, email, address, phone, customerId]
         );
 
@@ -122,9 +114,7 @@ app.delete('/api/customers/:id', async (req, res) => {
     }
 });
 
-/* ===============================
-   CUSTOMER HISTORY
-=================================*/
+/*CUSTOMER HISTORY*/
 app.get('/api/customers/:id/history', async (req, res) => {
     try {
         const customerId = req.params.id;
@@ -135,16 +125,15 @@ app.get('/api/customers/:id/history', async (req, res) => {
         res.status(500).json({ error: error.message });
     }
 });
-/* ===============================
-   CRUD PRODUCTS
-=================================*/
+
+/*CRUD PRODUCTS*/
 app.post('/api/products', async (req, res) => {
     try {
         const { sku, name, unit_price, category_id, supplier_id } = req.body;
 
         const [result] = await pool.query(
             `INSERT INTO products (sku,name,unit_price,category_id,supplier_id)
-             VALUES (?,?,?,?,?)`,
+            VALUES (?,?,?,?,?)`,
             [sku, name, unit_price, category_id, supplier_id]
         );
 
@@ -161,11 +150,11 @@ app.post('/api/products', async (req, res) => {
 app.get('/api/products', async (req, res) => {
     const [rows] = await pool.query(`
         SELECT p.product_id,
-               p.sku,
-               p.name,
-               p.unit_price,
-               c.name AS category,
-               s.name AS supplier
+                p.sku,
+                p.name,
+                p.unit_price,
+                c.name AS category,
+                s.name AS supplier
         FROM products p
         JOIN categories c ON p.category_id = c.category_id
         JOIN suppliers s ON p.supplier_id = s.supplier_id
@@ -181,8 +170,8 @@ app.put('/api/products/:id', async (req, res) => {
 
     await pool.query(
         `UPDATE products
-         SET name=?, unit_price=?, category_id=?, supplier_id=?
-         WHERE product_id=?`,
+            SET name=?, unit_price=?, category_id=?, supplier_id=?
+            WHERE product_id=?`,
         [name, unit_price, category_id, supplier_id, productId]
     );
 
@@ -202,9 +191,7 @@ app.delete('/api/products/:id', async (req, res) => {
     res.json({ message: "Deleted" });
 });
 
-/* ===============================
-   CREATE ORDER WITH DETAILS
-=================================*/
+/*CREATE ORDER WITH DETAILS*/
 app.post('/api/orders', async (req, res) => {
 
     const connection = await pool.getConnection();
@@ -216,7 +203,7 @@ app.post('/api/orders', async (req, res) => {
 
         const [orderResult] = await connection.query(
             `INSERT INTO orders (transaction_code,customer_id,order_date)
-             VALUES (?,?,?)`,
+            VALUES (?,?,?)`,
             [transaction_code, customer_id, order_date]
         );
 
@@ -227,7 +214,7 @@ app.post('/api/orders', async (req, res) => {
 
             await connection.query(
                 `INSERT INTO order_details (order_id,product_id,quantity,total_line_value)
-                 VALUES (?,?,?,?)`,
+                VALUES (?,?,?,?)`,
                 [orderId, item.product_id, item.quantity, totalLine]
             );
         }
@@ -245,10 +232,7 @@ app.post('/api/orders', async (req, res) => {
     }
 });
 
-/*No tocar */
-/* ===============================
-   CSV UPLOADS (ALL TABLES)
-=================================*/
+/*CSV UPLOADS (ALL TABLES)*/
 function processCSV(filePath, callback) {
     const rows = [];
     fs.createReadStream(filePath)
@@ -257,7 +241,7 @@ function processCSV(filePath, callback) {
         .on('end', () => callback(rows));
 }
 
-/* CUSTOMERS CSV */
+/*CUSTOMERS CSV*/
 app.post('/upload/customers', upload.single('file'), (req, res) => {
     processCSV(req.file.path, async (rows) => {
         try {
@@ -279,7 +263,7 @@ app.post('/upload/customers', upload.single('file'), (req, res) => {
     });
 });
 
-/* SUPPLIERS CSV */
+/*SUPPLIERS CSV*/
 app.post('/upload/suppliers', upload.single('file'), (req, res) => {
     processCSV(req.file.path, async (rows) => {
         try {
@@ -298,7 +282,7 @@ app.post('/upload/suppliers', upload.single('file'), (req, res) => {
     });
 });
 
-/* CATEGORIES CSV */
+/*CATEGORIES CSV*/
 app.post('/upload/categories', upload.single('file'), (req, res) => {
     processCSV(req.file.path, async (rows) => {
         try {
@@ -317,7 +301,7 @@ app.post('/upload/categories', upload.single('file'), (req, res) => {
     });
 });
 
-/* PRODUCTS CSV */
+/*PRODUCTS CSV*/
 app.post('/upload/products', upload.single('file'), (req, res) => {
     processCSV(req.file.path, async (rows) => {
         try {
@@ -338,7 +322,7 @@ app.post('/upload/products', upload.single('file'), (req, res) => {
     });
 });
 
-/* ORDERS CSV */
+/*ORDERS CSV*/
 app.post('/upload/orders', upload.single('file'), (req, res) => {
     processCSV(req.file.path, async (rows) => {
         try {
@@ -357,8 +341,7 @@ app.post('/upload/orders', upload.single('file'), (req, res) => {
     });
 });
 
-/*NO TOCAR MUERTE */
-/* ORDER DETAILS CSV */
+/*ORDER DETAILS CSV*/
 app.post('/upload/order-details', upload.single('file'), (req, res) => {
     processCSV(req.file.path, async (rows) => {
         try {
@@ -376,9 +359,7 @@ app.post('/upload/order-details', upload.single('file'), (req, res) => {
     });
 });
 
-/* ===============================
-   MASSIVE MIGRATION - FLAT CSV
-=================================*/
+/*MASSIVE MIGRATION - FLAT CSV*/
 app.post('/upload/full-migration', upload.single('file'), (req, res) => {
 
     processCSV(req.file.path, async (rows) => {
@@ -390,12 +371,12 @@ app.post('/upload/full-migration', upload.single('file'), (req, res) => {
 
             for (const row of rows) {
 
-                /* 1️ CUSTOMER (idempotent) */
+                /*1 CUSTOMER (idempotent)*/
                 const [customerResult] = await connection.query(`
                     INSERT INTO customers (name,email,address,phone)
-                    VALUES (?,?,?,NULL)
+                    VALUES (?,?,?,?)
                     ON DUPLICATE KEY UPDATE name=VALUES(name)
-                `, [row.customer_name, row.customer_email, row.address]);
+                `, [row.customer_name, row.customer_email, row.address, row.phone]);
 
                 const [customer] = await connection.query(
                     `SELECT customer_id FROM customers WHERE email=?`,
@@ -404,7 +385,7 @@ app.post('/upload/full-migration', upload.single('file'), (req, res) => {
 
                 const customerId = customer[0].customer_id;
 
-                /* 2️ CATEGORY */
+                /*2 CATEGORY*/
                 await connection.query(`
                     INSERT INTO categories (name)
                     VALUES (?)
@@ -418,7 +399,7 @@ app.post('/upload/full-migration', upload.single('file'), (req, res) => {
 
                 const categoryId = category[0].category_id;
 
-                /* 3 SUPPLIER */
+                /*3 SUPPLIER*/
                 await connection.query(`
                     INSERT INTO suppliers (name,email)
                     VALUES (?,?)
@@ -432,7 +413,7 @@ app.post('/upload/full-migration', upload.single('file'), (req, res) => {
 
                 const supplierId = supplier[0].supplier_id;
 
-                /* 4️ PRODUCT */
+                /*4 PRODUCT*/
                 await connection.query(`
                     INSERT INTO products (sku,name,unit_price,category_id,supplier_id)
                     VALUES (?,?,?,?,?)
@@ -454,7 +435,7 @@ app.post('/upload/full-migration', upload.single('file'), (req, res) => {
 
                 const productId = product[0].product_id;
 
-                /* 5️ ORDER */
+                /*5 ORDER*/
                 await connection.query(`
                     INSERT INTO orders (transaction_code,customer_id,order_date)
                     VALUES (?,?,?)
@@ -472,7 +453,7 @@ app.post('/upload/full-migration', upload.single('file'), (req, res) => {
 
                 const orderId = order[0].order_id;
 
-                /* 6️ ORDER DETAIL */
+                /*6 ORDER DETAIL*/
                 const totalLine = row.quantity * row.unit_price;
 
                 await connection.query(`
@@ -495,13 +476,11 @@ app.post('/upload/full-migration', upload.single('file'), (req, res) => {
     });
 });
 
-/* ===============================
-   BUSINESS INTELLIGENCE
-=================================*/
+/*BUSINESS INTELLIGENCE*/
 app.get('/api/analytics/customers', async (req, res) => {
     const [rows] = await pool.query(`
         SELECT c.name,
-               SUM(od.total_line_value) AS total_spent
+            SUM(od.total_line_value) AS total_spent
         FROM customers c
         JOIN orders o ON c.customer_id = o.customer_id
         JOIN order_details od ON o.order_id = od.order_id
@@ -515,8 +494,8 @@ app.get('/api/analytics/customers', async (req, res) => {
 app.get('/api/analytics/products', async (req, res) => {
     const [rows] = await pool.query(`
         SELECT p.name,
-               SUM(od.quantity) AS total_sold,
-               SUM(od.total_line_value) AS revenue
+            SUM(od.quantity) AS total_sold,
+            SUM(od.total_line_value) AS revenue
         FROM products p
         JOIN order_details od ON p.product_id = od.product_id
         GROUP BY p.product_id
@@ -526,10 +505,7 @@ app.get('/api/analytics/products', async (req, res) => {
     res.json(rows);
 });
 
-/* ===============================
-   BUSINESS INTELLIGENCE - SUPPLIERS
-=================================*/
-
+/*BUSINESS INTELLIGENCE - SUPPLIERS*/
 app.get('/api/analytics/suppliers', async (req, res) => {
     try {
         const [rows] = await pool.query(`
@@ -543,7 +519,6 @@ app.get('/api/analytics/suppliers', async (req, res) => {
             GROUP BY s.supplier_id
             ORDER BY total_items_sold DESC
         `);
-
         // Log de auditoría en MongoDB
         await logActionWithId("run_supplier_analytics");
 
@@ -553,9 +528,7 @@ app.get('/api/analytics/suppliers', async (req, res) => {
     }
 });
 
-/* ===============================
-   CUSTOMER / PRODUCT / ORDER HISTORY
-=================================*/
+/*CUSTOMER / PRODUCT / ORDER HISTORY*/
 app.get('/api/customers/:id/history', async (req, res) => {
     try {
         const customerId = req.params.id;
@@ -589,9 +562,7 @@ app.get('/api/orders/:id/history', async (req, res) => {
     }
 });
 
-/* ===============================
-   START SERVER
-=================================*/
+/*START SERVER*/
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {

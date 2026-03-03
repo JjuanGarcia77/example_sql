@@ -1,0 +1,105 @@
+,orders,,,,customers,,,,,,categories,,,products,,,,,,suppliers,,
+orders_id,transaction_id,date,,customers_id,customer_name,customer_email,customer_address,customer_phone,,categories_id,product_category,,product_id,product_sku,product_name,unit_price,quantity,total_line_value,,suppliers_id,supplier_name,supplier_email
+,TXN-1001,2024-01-15,,,Juan Perez,juan.perez@mail.com,Calle 123 #45-67 Bogota,3001234567,,,Electronics,,,LPT-HP-001,Laptop HP Pavilion 15,3500000,1,3500000,,,TechDistro SAS,ventas@techdistro.com
+,TXN-1001,2024-01-15,,,Juan Perez,juan.perez@mail.com,Calle 123 #45-67 Bogota,3001234567,,,Accessories,,,MSE-LOG-001,Mouse Logitech G203,120000,2,240000,,,Accesorios Total,contacto@accesoriostotal.com
+,TXN-1001,2024-01-15,,,Juan Perez,juan.perez@mail.com,Calle 123 #45-67 Bogota,3001234567,,,Accessories,,,USB-KIN-64,USB Kingston 64GB,45000,1,45000,,,Accesorios Total,contacto@accesoriostotal.com
+,TXN-1002,2024-01-15,,,Maria Rodriguez,maria.rod@gmail.com,Cra 80 #10-20 Medellin,3109876543,,,Home,,,CHR-ERG-005,Silla Ergonomica Office,450000,1,450000,,,MueblesYa,info@mueblesya.com
+,TXN-1003,2024-01-16,,,Carlos Gomez,carlos.g@hotmail.com,Av Siempre Viva 123 Cali,3205551234,,,Electronics,,,MON-SAM-24,Monitor Samsung 24,600000,2,1200000,,,TechDistro SAS,ventas@techdistro.com
+,TXN-1003,2024-01-16,,,Carlos Gomez,carlos.g@hotmail.com,Av Siempre Viva 123 Cali,3205551234,,,Accessories,,,KBD-MEC-002,Teclado Mecanico Redragon,250000,1,250000,,,GamerZone,sales@gamerzone.co
+,TXN-1004,2024-01-16,,,Ana Torres,ana.torres@outlook.com,Diag 50 #20-10 Barranquilla,3004445566,,,Home,,,DSK-STD-100,Escritorio Estandar Blanco,320000,1,320000,,,MueblesYa,info@mueblesya.com
+,TXN-1004,2024-01-16,,,Ana Torres,ana.torres@outlook.com,Diag 50 #20-10 Barranquilla,3004445566,,,Home,,,LMP-LED-001,Lampara LED Escritorio,80000,3,240000,,,IluminaTodo,ventas@iluminatodo.co
+,TXN-1005,2024-01-17,,,Pedro Martinez,pedro.martinez@yahoo.com,Calle 100 #15-20 Bogota,3151112233,,,Electronics,,,LPT-HP-001,Laptop HP Pavilion 15,3500000,1,3500000,,,TechDistro SAS,ventas@techdistro.com
+,TXN-1005,2024-01-17,,,Pedro Martinez,pedro.martinez@yahoo.com,Calle 100 #15-20 Bogota,3151112233,,,Accessories,,,HDP-SNY-005,Audifonos Sony WH-1000,1200000,1,1200000,,,SoundWave Ltd,contact@soundwave.com
+,TXN-1006,2024-01-18,,,Luisa Fernandez,luisa.fer@gmail.com,Tv 4 #5-12 Bucaramanga,3169998877,,,Accessories,,,MSE-LOG-001,Mouse Logitech G203,120000,1,120000,,,Accesorios Total,contacto@accesoriostotal.com
+,TXN-1006,2024-01-18,,,Luisa Fernandez,luisa.fer@gmail.com,Tv 4 #5-12 Bucaramanga,3169998877,,,Electronics,,,TAB-APP-009,iPad Air 64GB,2800000,1,2800000,,,TechDistro SAS,ventas@techdistro.com
+,TXN-1006,2024-01-18,,,Luisa Fernandez,luisa.fer@gmail.com,Tv 4 #5-12 Bucaramanga,3169998877,,,Accessories,,,CS-TAB-009,Funda iPad Air,90000,1,90000,,,Accesorios Total,contacto@accesoriostotal.com
+,TXN-1007,2024-01-19,,,Jorge Ramirez,jorge.r@empresa.com,Cra 7 #72-10 Bogota,3112223344,,,Electronics,,,MON-LG-27,Monitor LG 27 UltraGear,1100000,2,2200000,,,TechDistro SAS,ventas@techdistro.com
+,TXN-1007,2024-01-19,,,Jorge Ramirez,jorge.r@empresa.com,Cra 7 #72-10 Bogota,3112223344,,,Accessories,,,CBL-HDMI-003,Cable HDMI 2.0 3m,35000,2,70000,,,Cables & Conectores,info@cablesconectores.com
+,TXN-1008,2024-01-20,,,Sofia Vergara,sofia.v@cine.com,Calle 10 #10-10 Cartagena,3007776655,,,Home,,,SF-LIV-002,Sofa Cama Gris,1500000,1,1500000,,,MueblesYa,info@mueblesya.com
+,TXN-1009,2024-01-21,,,Juan Perez,juan.perez@mail.com,Calle 123 #45-67 Bogota,3001234567,,,Home,,,LMP-LED-001,Lampara LED Escritorio,80000,2,160000,,,IluminaTodo,ventas@iluminatodo.co
+,TXN-1010,2024-01-22,,,Miguel Angel,miguel.angel@art.com,Av El Poblado 45 Medellin,3123334455,,,Electronics,,,PRT-EPS-004,Impresora Epson EcoTank,950000,1,950000,,,Oficina Digital,sales@oficinadigital.com
+,TXN-1010,2024-01-22,,,Miguel Angel,miguel.angel@art.com,Av El Poblado 45 Medellin,3123334455,,,Stationery,,,PPR-RSM-500,Resma Papel Carta 500,25000,5,125000,,,Papeleria Mundial,pedidos@papeleriamundial.com
+,TXN-1011,2024-01-23,,,Elena Nito,elena.nito@broma.com,Calle Falsa 123 Pereira,3185550000,,,Accessories,,,USB-KIN-64,USB Kingston 64GB,45000,10,450000,,,Accesorios Total,contacto@accesoriostotal.com
+,TXN-1012,2024-01-23,,,Carlos Gomez,carlos.g@hotmail.com,Av Siempre Viva 123 Cali,3205551234,,,Electronics,,,SPK-JBL-005,Parlante JBL Flip 6,550000,1,550000,,,SoundWave Ltd,contact@soundwave.com
+,TXN-1013,2024-01-24,,,Ana Torres,ana.torres@outlook.com,Diag 50 #20-10 Barranquilla,3004445566,,,Kitchen,,,CFT-OST-001,Cafetera Oster 12 Tazas,180000,1,180000,,,ElectroHogar,ventas@electrohogar.com
+,TXN-1013,2024-01-24,,,Ana Torres,ana.torres@outlook.com,Diag 50 #20-10 Barranquilla,3004445566,,,Kitchen,,,BTR-IMU-002,Batidora Inmersion,120000,1,120000,,,ElectroHogar,ventas@electrohogar.com
+,TXN-1014,2024-01-25,,,Maria Rodriguez,maria.rod@gmail.com,Cra 80 #10-20 Medellin,3109876543,,,Electronics,,,LPT-HP-001,Laptop HP Pavilion 15,3500000,1,3500000,,,TechDistro SAS,ventas@techdistro.com
+,TXN-1014,2024-01-25,,,Maria Rodriguez,maria.rod@gmail.com,Cra 80 #10-20 Medellin,3109876543,,,Accessories,,,MSE-LOG-001,Mouse Logitech G203,120000,1,120000,,,Accesorios Total,contacto@accesoriostotal.com
+,TXN-1014,2024-01-25,,,Maria Rodriguez,maria.rod@gmail.com,Cra 80 #10-20 Medellin,3109876543,,,Accessories,,,HDP-SNY-005,Audifonos Sony WH-1000,1200000,1,1200000,,,SoundWave Ltd,contact@soundwave.com
+,TXN-1015,2024-01-26,,,Pedro Martinez,pedro.martinez@yahoo.com,Calle 100 #15-20 Bogota,3151112233,,,Electronics,,,TAB-APP-009,iPad Air 64GB,2800000,2,5600000,,,TechDistro SAS,ventas@techdistro.com
+,TXN-1016,2024-01-27,,,Laura Pausini,laura.p@musica.com,Via Roma 1 Italia (Bogota),3001112222,,,Home,,,CHR-ERG-005,Silla Ergonomica Office,450000,2,900000,,,MueblesYa,info@mueblesya.com
+,TXN-1017,2024-01-28,,,Juan Perez,juan.perez@mail.com,Calle 123 #45-67 Bogota,3001234567,,,Stationery,,,PPR-RSM-500,Resma Papel Carta 500,25000,2,50000,,,Papeleria Mundial,pedidos@papeleriamundial.com
+,TXN-1018,2024-01-29,,,Andres Cepeda,andres.c@musica.com,Calle 85 #11-20 Bogota,3105558888,,,Electronics,,,MIC-SHR-058,Microfono Shure SM58,450000,3,1350000,,,SoundWave Ltd,contact@soundwave.com
+,TXN-1019,2024-01-30,,,Luisa Fernandez,luisa.fer@gmail.com,Tv 4 #5-12 Bucaramanga,3169998877,,,Kitchen,,,CFT-OST-001,Cafetera Oster 12 Tazas,180000,1,180000,,,ElectroHogar,ventas@electrohogar.com
+,TXN-1020,2024-01-31,,,Carlos Gomez,carlos.g@hotmail.com,Av Siempre Viva 123 Cali,3205551234,,,Accessories,,,KBD-MEC-002,Teclado Mecanico Redragon,250000,1,250000,,,GamerZone,sales@gamerzone.co
+,TXN-1020,2024-01-31,,,Carlos Gomez,carlos.g@hotmail.com,Av Siempre Viva 123 Cali,3205551234,,,Accessories,,,MSE-LOG-001,Mouse Logitech G203,120000,1,120000,,,Accesorios Total,contacto@accesoriostotal.com
+,TXN-1021,2024-02-01,,,Camila Cabello,camila.c@havana.com,Calle 50 #50-50 Miami (Medellin),3009990000,,,Electronics,,,SPK-JBL-005,Parlante JBL Flip 6,550000,2,1100000,,,SoundWave Ltd,contact@soundwave.com
+,TXN-1022,2024-02-02,,,Jorge Ramirez,jorge.r@empresa.com,Cra 7 #72-10 Bogota,3112223344,,,Electronics,,,LPT-HP-001,Laptop HP Pavilion 15,3500000,5,17500000,,,TechDistro SAS,ventas@techdistro.com
+,TXN-1023,2024-02-03,,,Sofia Vergara,sofia.v@cine.com,Calle 10 #10-10 Cartagena,3007776655,,,Home,,,LMP-LED-001,Lampara LED Escritorio,80000,4,320000,,,IluminaTodo,ventas@iluminatodo.co
+,TXN-1024,2024-02-04,,,Miguel Angel,miguel.angel@art.com,Av El Poblado 45 Medellin,3123334455,,,Stationery,,,MKR-SHR-012,Marcadores Sharpie x12,35000,2,70000,,,Papeleria Mundial,pedidos@papeleriamundial.com
+,TXN-1025,2024-02-05,,,Elena Nito,elena.nito@broma.com,Calle Falsa 123 Pereira,3185550000,,,Home,,,DSK-STD-100,Escritorio Estandar Blanco,320000,1,320000,,,MueblesYa,info@mueblesya.com
+,TXN-1025,2024-02-05,,,Elena Nito,elena.nito@broma.com,Calle Falsa 123 Pereira,3185550000,,,Home,,,CHR-ERG-005,Silla Ergonomica Office,450000,1,450000,,,MueblesYa,info@mueblesya.com
+,TXN-1026,2024-02-06,,,Juan Perez,juan.perez@mail.com,Calle 123 #45-67 Bogota,3001234567,,,Electronics,,,MON-SAM-24,Monitor Samsung 24,600000,1,600000,,,TechDistro SAS,ventas@techdistro.com
+,TXN-1027,2024-02-07,,,Maria Rodriguez,maria.rod@gmail.com,Cra 80 #10-20 Medellin,3109876543,,,Kitchen,,,BTR-IMU-002,Batidora Inmersion,120000,1,120000,,,ElectroHogar,ventas@electrohogar.com
+,TXN-1028,2024-02-08,,,Pedro Martinez,pedro.martinez@yahoo.com,Calle 100 #15-20 Bogota,3151112233,,,Accessories,,,USB-KIN-64,USB Kingston 64GB,45000,2,90000,,,Accesorios Total,contacto@accesoriostotal.com
+,TXN-1029,2024-02-09,,,Luisa Fernandez,luisa.fer@gmail.com,Tv 4 #5-12 Bucaramanga,3169998877,,,Electronics,,,TAB-APP-009,iPad Air 64GB,2800000,1,2800000,,,TechDistro SAS,ventas@techdistro.com
+,TXN-1030,2024-02-10,,,Ana Torres,ana.torres@outlook.com,Diag 50 #20-10 Barranquilla,3004445566,,,Stationery,,,PPR-RSM-500,Resma Papel Carta 500,25000,10,250000,,,Papeleria Mundial,pedidos@papeleriamundial.com
+,TXN-1031,2024-02-11,,,Carlos Gomez,carlos.g@hotmail.com,Av Siempre Viva 123 Cali,3205551234,,,Accessories,,,HDP-SNY-005,Audifonos Sony WH-1000,1200000,1,1200000,,,SoundWave Ltd,contact@soundwave.com
+,TXN-1031,2024-02-11,,,Carlos Gomez,carlos.g@hotmail.com,Av Siempre Viva 123 Cali,3205551234,,,Accessories,,,CBL-HDMI-003,Cable HDMI 2.0 3m,35000,1,35000,,,Cables & Conectores,info@cablesconectores.com
+,TXN-1032,2024-02-12,,,Jorge Ramirez,jorge.r@empresa.com,Cra 7 #72-10 Bogota,3112223344,,,Electronics,,,PRT-EPS-004,Impresora Epson EcoTank,950000,3,2850000,,,Oficina Digital,sales@oficinadigital.com
+,TXN-1033,2024-02-13,,,Sofia Vergara,sofia.v@cine.com,Calle 10 #10-10 Cartagena,3007776655,,,Home,,,SF-LIV-002,Sofa Cama Gris,1500000,1,1500000,,,MueblesYa,info@mueblesya.com
+,TXN-1033,2024-02-13,,,Sofia Vergara,sofia.v@cine.com,Calle 10 #10-10 Cartagena,3007776655,,,Home,,,LMP-LED-001,Lampara LED Escritorio,80000,2,160000,,,IluminaTodo,ventas@iluminatodo.co
+,TXN-1034,2024-02-14,,,Miguel Angel,miguel.angel@art.com,Av El Poblado 45 Medellin,3123334455,,,Electronics,,,LPT-HP-001,Laptop HP Pavilion 15,3500000,1,3500000,,,TechDistro SAS,ventas@techdistro.com
+,TXN-1035,2024-02-15,,,Elena Nito,elena.nito@broma.com,Calle Falsa 123 Pereira,3185550000,,,Accessories,,,MSE-LOG-001,Mouse Logitech G203,120000,5,600000,,,Accesorios Total,contacto@accesoriostotal.com
+,TXN-1036,2024-02-16,,,Juan Perez,juan.perez@mail.com,Calle 123 #45-67 Bogota,3001234567,,,Kitchen,,,CFT-OST-001,Cafetera Oster 12 Tazas,180000,1,180000,,,ElectroHogar,ventas@electrohogar.com
+,TXN-1037,2024-02-17,,,Maria Rodriguez,maria.rod@gmail.com,Cra 80 #10-20 Medellin,3109876543,,,Home,,,DSK-STD-100,Escritorio Estandar Blanco,320000,1,320000,,,MueblesYa,info@mueblesya.com
+,TXN-1038,2024-02-18,,,Pedro Martinez,pedro.martinez@yahoo.com,Calle 100 #15-20 Bogota,3151112233,,,Electronics,,,MON-LG-27,Monitor LG 27 UltraGear,1100000,1,1100000,,,TechDistro SAS,ventas@techdistro.com
+,TXN-1039,2024-02-19,,,Luisa Fernandez,luisa.fer@gmail.com,Tv 4 #5-12 Bucaramanga,3169998877,,,Accessories,,,KBD-MEC-002,Teclado Mecanico Redragon,250000,1,250000,,,GamerZone,sales@gamerzone.co
+,TXN-1039,2024-02-19,,,Luisa Fernandez,luisa.fer@gmail.com,Tv 4 #5-12 Bucaramanga,3169998877,,,Accessories,,,MSE-LOG-001,Mouse Logitech G203,120000,1,120000,,,Accesorios Total,contacto@accesoriostotal.com
+,TXN-1040,2024-02-20,,,Ana Torres,ana.torres@outlook.com,Diag 50 #20-10 Barranquilla,3004445566,,,Electronics,,,SPK-JBL-005,Parlante JBL Flip 6,550000,1,550000,,,SoundWave Ltd,contact@soundwave.com
+,TXN-1041,2024-02-21,,,Carlos Gomez,carlos.g@hotmail.com,Av Siempre Viva 123 Cali,3205551234,,,Kitchen,,,BTR-IMU-002,Batidora Inmersion,120000,2,240000,,,ElectroHogar,ventas@electrohogar.com
+,TXN-1042,2024-02-22,,,Jorge Ramirez,jorge.r@empresa.com,Cra 7 #72-10 Bogota,3112223344,,,Stationery,,,MKR-SHR-012,Marcadores Sharpie x12,35000,5,175000,,,Papeleria Mundial,pedidos@papeleriamundial.com
+,TXN-1043,2024-02-23,,,Sofia Vergara,sofia.v@cine.com,Calle 10 #10-10 Cartagena,3007776655,,,Electronics,,,TAB-APP-009,iPad Air 64GB,2800000,1,2800000,,,TechDistro SAS,ventas@techdistro.com
+,TXN-1043,2024-02-23,,,Sofia Vergara,sofia.v@cine.com,Calle 10 #10-10 Cartagena,3007776655,,,Accessories,,,CS-TAB-009,Funda iPad Air,90000,1,90000,,,Accesorios Total,contacto@accesoriostotal.com
+,TXN-1044,2024-02-24,,,Miguel Angel,miguel.angel@art.com,Av El Poblado 45 Medellin,3123334455,,,Electronics,,,MON-SAM-24,Monitor Samsung 24,600000,3,1800000,,,TechDistro SAS,ventas@techdistro.com
+,TXN-1045,2024-02-25,,,Elena Nito,elena.nito@broma.com,Calle Falsa 123 Pereira,3185550000,,,Accessories,,,USB-KIN-64,USB Kingston 64GB,45000,1,45000,,,Accesorios Total,contacto@accesoriostotal.com
+,TXN-1046,2024-02-26,,,Juan Perez,juan.perez@mail.com,Calle 123 #45-67 Bogota,3001234567,,,Home,,,LMP-LED-001,Lampara LED Escritorio,80000,1,80000,,,IluminaTodo,ventas@iluminatodo.co
+,TXN-1047,2024-02-27,,,Maria Rodriguez,maria.rod@gmail.com,Cra 80 #10-20 Medellin,3109876543,,,Accessories,,,CBL-HDMI-003,Cable HDMI 2.0 3m,35000,3,105000,,,Cables & Conectores,info@cablesconectores.com
+,TXN-1048,2024-02-28,,,Pedro Martinez,pedro.martinez@yahoo.com,Calle 100 #15-20 Bogota,3151112233,,,Electronics,,,LPT-HP-001,Laptop HP Pavilion 15,3500000,1,3500000,,,TechDistro SAS,ventas@techdistro.com
+,TXN-1049,2024-03-01,,,Luisa Fernandez,luisa.fer@gmail.com,Tv 4 #5-12 Bucaramanga,3169998877,,,Home,,,SF-LIV-002,Sofa Cama Gris,1500000,1,1500000,,,MueblesYa,info@mueblesya.com
+,TXN-1050,2024-03-02,,,Ana Torres,ana.torres@outlook.com,Diag 50 #20-10 Barranquilla,3004445566,,,Stationery,,,PPR-RSM-500,Resma Papel Carta 500,25000,2,50000,,,Papeleria Mundial,pedidos@papeleriamundial.com
+,TXN-1051,2024-03-03,,,Carlos Gomez,carlos.g@hotmail.com,Av Siempre Viva 123 Cali,3205551234,,,Electronics,,,MIC-SHR-058,Microfono Shure SM58,450000,1,450000,,,SoundWave Ltd,contact@soundwave.com
+,TXN-1052,2024-03-04,,,Jorge Ramirez,jorge.r@empresa.com,Cra 7 #72-10 Bogota,3112223344,,,Electronics,,,PRT-EPS-004,Impresora Epson EcoTank,950000,1,950000,,,Oficina Digital,sales@oficinadigital.com
+,TXN-1053,2024-03-05,,,Sofia Vergara,sofia.v@cine.com,Calle 10 #10-10 Cartagena,3007776655,,,Kitchen,,,CFT-OST-001,Cafetera Oster 12 Tazas,180000,2,360000,,,ElectroHogar,ventas@electrohogar.com
+,TXN-1054,2024-03-06,,,Miguel Angel,miguel.angel@art.com,Av El Poblado 45 Medellin,3123334455,,,Accessories,,,HDP-SNY-005,Audifonos Sony WH-1000,1200000,1,1200000,,,SoundWave Ltd,contact@soundwave.com
+,TXN-1055,2024-03-07,,,Elena Nito,elena.nito@broma.com,Calle Falsa 123 Pereira,3185550000,,,Home,,,CHR-ERG-005,Silla Ergonomica Office,450000,1,450000,,,MueblesYa,info@mueblesya.com
+,TXN-1056,2024-03-08,,,Juan Perez,juan.perez@mail.com,Calle 123 #45-67 Bogota,3001234567,,,Electronics,,,TAB-APP-009,iPad Air 64GB,2800000,1,2800000,,,TechDistro SAS,ventas@techdistro.com
+,TXN-1057,2024-03-09,,,Maria Rodriguez,maria.rod@gmail.com,Cra 80 #10-20 Medellin,3109876543,,,Accessories,,,MSE-LOG-001,Mouse Logitech G203,120000,1,120000,,,Accesorios Total,contacto@accesoriostotal.com
+,TXN-1057,2024-03-09,,,Maria Rodriguez,maria.rod@gmail.com,Cra 80 #10-20 Medellin,3109876543,,,Accessories,,,KBD-MEC-002,Teclado Mecanico Redragon,250000,1,250000,,,GamerZone,sales@gamerzone.co
+,TXN-1058,2024-03-10,,,Pedro Martinez,pedro.martinez@yahoo.com,Calle 100 #15-20 Bogota,3151112233,,,Kitchen,,,BTR-IMU-002,Batidora Inmersion,120000,1,120000,,,ElectroHogar,ventas@electrohogar.com
+,TXN-1059,2024-03-11,,,Luisa Fernandez,luisa.fer@gmail.com,Tv 4 #5-12 Bucaramanga,3169998877,,,Electronics,,,SPK-JBL-005,Parlante JBL Flip 6,550000,1,550000,,,SoundWave Ltd,contact@soundwave.com
+,TXN-1060,2024-03-12,,,Ana Torres,ana.torres@outlook.com,Diag 50 #20-10 Barranquilla,3004445566,,,Home,,,LMP-LED-001,Lampara LED Escritorio,80000,1,80000,,,IluminaTodo,ventas@iluminatodo.co
+,TXN-1061,2024-03-13,,,Carlos Gomez,carlos.g@hotmail.com,Av Siempre Viva 123 Cali,3205551234,,,Electronics,,,MON-LG-27,Monitor LG 27 UltraGear,1100000,1,1100000,,,TechDistro SAS,ventas@techdistro.com
+,TXN-1062,2024-03-14,,,Jorge Ramirez,jorge.r@empresa.com,Cra 7 #72-10 Bogota,3112223344,,,Accessories,,,USB-KIN-64,USB Kingston 64GB,45000,3,135000,,,Accesorios Total,contacto@accesoriostotal.com
+,TXN-1063,2024-03-15,,,Sofia Vergara,sofia.v@cine.com,Calle 10 #10-10 Cartagena,3007776655,,,Stationery,,,MKR-SHR-012,Marcadores Sharpie x12,35000,1,35000,,,Papeleria Mundial,pedidos@papeleriamundial.com
+,TXN-1064,2024-03-16,,,Miguel Angel,miguel.angel@art.com,Av El Poblado 45 Medellin,3123334455,,,Electronics,,,LPT-HP-001,Laptop HP Pavilion 15,3500000,1,3500000,,,TechDistro SAS,ventas@techdistro.com
+,TXN-1064,2024-03-16,,,Miguel Angel,miguel.angel@art.com,Av El Poblado 45 Medellin,3123334455,,,Accessories,,,CS-TAB-009,Funda iPad Air,90000,1,90000,,,Accesorios Total,contacto@accesoriostotal.com
+,TXN-1065,2024-03-17,,,Elena Nito,elena.nito@broma.com,Calle Falsa 123 Pereira,3185550000,,,Home,,,DSK-STD-100,Escritorio Estandar Blanco,320000,1,320000,,,MueblesYa,info@mueblesya.com
+,TXN-1066,2024-03-18,,,Juan Perez,juan.perez@mail.com,Calle 123 #45-67 Bogota,3001234567,,,Electronics,,,MON-SAM-24,Monitor Samsung 24,600000,1,600000,,,TechDistro SAS,ventas@techdistro.com
+,TXN-1067,2024-03-19,,,Maria Rodriguez,maria.rod@gmail.com,Cra 80 #10-20 Medellin,3109876543,,,Electronics,,,MIC-SHR-058,Microfono Shure SM58,450000,1,450000,,,SoundWave Ltd,contact@soundwave.com
+,TXN-1068,2024-03-20,,,Pedro Martinez,pedro.martinez@yahoo.com,Calle 100 #15-20 Bogota,3151112233,,,Accessories,,,CBL-HDMI-003,Cable HDMI 2.0 3m,35000,1,35000,,,Cables & Conectores,info@cablesconectores.com
+,TXN-1069,2024-03-21,,,Luisa Fernandez,luisa.fer@gmail.com,Tv 4 #5-12 Bucaramanga,3169998877,,,Kitchen,,,CFT-OST-001,Cafetera Oster 12 Tazas,180000,1,180000,,,ElectroHogar,ventas@electrohogar.com
+,TXN-1070,2024-03-22,,,Ana Torres,ana.torres@outlook.com,Diag 50 #20-10 Barranquilla,3004445566,,,Electronics,,,PRT-EPS-004,Impresora Epson EcoTank,950000,1,950000,,,Oficina Digital,sales@oficinadigital.com
+,TXN-1071,2024-03-23,,,Carlos Gomez,carlos.g@hotmail.com,Av Siempre Viva 123 Cali,3205551234,,,Home,,,SF-LIV-002,Sofa Cama Gris,1500000,1,1500000,,,MueblesYa,info@mueblesya.com
+,TXN-1072,2024-03-24,,,Jorge Ramirez,jorge.r@empresa.com,Cra 7 #72-10 Bogota,3112223344,,,Electronics,,,TAB-APP-009,iPad Air 64GB,2800000,1,2800000,,,TechDistro SAS,ventas@techdistro.com
+,TXN-1073,2024-03-25,,,Sofia Vergara,sofia.v@cine.com,Calle 10 #10-10 Cartagena,3007776655,,,Accessories,,,HDP-SNY-005,Audifonos Sony WH-1000,1200000,1,1200000,,,SoundWave Ltd,contact@soundwave.com
+,TXN-1074,2024-03-26,,,Miguel Angel,miguel.angel@art.com,Av El Poblado 45 Medellin,3123334455,,,Electronics,,,LPT-HP-001,Laptop HP Pavilion 15,3500000,1,3500000,,,TechDistro SAS,ventas@techdistro.com
+,TXN-1075,2024-03-27,,,Elena Nito,elena.nito@broma.com,Calle Falsa 123 Pereira,3185550000,,,Accessories,,,MSE-LOG-001,Mouse Logitech G203,120000,2,240000,,,Accesorios Total,contacto@accesoriostotal.com
+,TXN-1076,2024-03-28,,,Juan Perez,juan.perez@mail.com,Calle 123 #45-67 Bogota,3001234567,,,Stationery,,,PPR-RSM-500,Resma Papel Carta 500,25000,1,25000,,,Papeleria Mundial,pedidos@papeleriamundial.com
+,TXN-1077,2024-03-29,,,Maria Rodriguez,maria.rod@gmail.com,Cra 80 #10-20 Medellin,3109876543,,,Home,,,LMP-LED-001,Lampara LED Escritorio,80000,1,80000,,,IluminaTodo,ventas@iluminatodo.co
+,TXN-1078,2024-03-30,,,Pedro Martinez,pedro.martinez@yahoo.com,Calle 100 #15-20 Bogota,3151112233,,,Electronics,,,SPK-JBL-005,Parlante JBL Flip 6,550000,1,550000,,,SoundWave Ltd,contact@soundwave.com
+,TXN-1079,2024-03-31,,,Luisa Fernandez,luisa.fer@gmail.com,Tv 4 #5-12 Bucaramanga,3169998877,,,Kitchen,,,BTR-IMU-002,Batidora Inmersion,120000,1,120000,,,ElectroHogar,ventas@electrohogar.com
+,TXN-1080,2024-04-01,,,Ana Torres,ana.torres@outlook.com,Diag 50 #20-10 Barranquilla,3004445566,,,Accessories,,,KBD-MEC-002,Teclado Mecanico Redragon,250000,1,250000,,,GamerZone,sales@gamerzone.co
+,TXN-1081,2024-04-02,,,Carlos Gomez,carlos.g@hotmail.com,Av Siempre Viva 123 Cali,3205551234,,,Electronics,,,MON-SAM-24,Monitor Samsung 24,600000,1,600000,,,TechDistro SAS,ventas@techdistro.com
+,TXN-1082,2024-04-03,,,Jorge Ramirez,jorge.r@empresa.com,Cra 7 #72-10 Bogota,3112223344,,,Electronics,,,TAB-APP-009,iPad Air 64GB,2800000,2,5600000,,,TechDistro SAS,ventas@techdistro.com
+,TXN-1083,2024-04-04,,,Sofia Vergara,sofia.v@cine.com,Calle 10 #10-10 Cartagena,3007776655,,,Home,,,CHR-ERG-005,Silla Ergonomica Office,450000,1,450000,,,MueblesYa,info@mueblesya.com

@@ -1,3 +1,43 @@
+# enfolded or diagram
+
+|_EXAMPLE_SQL
+|___docs
+|    |___archive
+|    |    |___mongodb
+|    |    |   |_mongo.png
+|    |    |___postman
+|    |    |    |_post.png
+|    |    |_data.csv
+|    |    |_f1.csv
+|    |    |_f2.csv
+|    |__scripts
+|    |    |_categories.csv
+|    |    |_customer.csv
+|    |    |_fullmigration.csv
+|    |    |_order_deteils.csv
+|    |    |_order.csv
+|    |    |_products.csv
+|    |    |_suppliers.csv
+|    |
+|    |__database.sql
+|    |__DER.png
+|
+|__node_modules
+|
+|__uploads
+|
+|_.env
+|
+|_.gitignore
+|
+|_package-lock.json
+|
+|_package.json
+|
+|_README.md
+|
+|_server.js
+
 # MegaStore API
 
 ## Overview
